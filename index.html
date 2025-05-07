@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medi Help Korea - Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: linear-gradient(135deg, #E8F3FF, #F1F8FF);
+      color: #103580;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .coming-soon {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1384da;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .email-box {
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    .email-box input {
+      border: none;
+      padding: 15px 20px;
+      flex: 1;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .email-box button {
+      background: #1384da;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .email-box button:hover {
+      background: #0c5ca8;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Medi Help Korea</h1>
+    <div class="coming-soon">Coming Soon</div>
+    <p>Your personal medical guide in Korea. We’re getting ready to launch something amazing!</p>
+    <div class="email-box">
+      <input type="email" placeholder="Enter your email to get notified" />
+      <button>Notify Me</button>
+    </div>
+  </div>
+</body>
+</html>
